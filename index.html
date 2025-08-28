@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
   </head>
 
 </head>
-<body>
-    <h1 class="text-4xl">Hello</h1>
+<body class="mx-auto font-sans">
+    <section  class="bg-[url('/Images/welcome-homepage-new.jpeg')] w-full h-auto">
+    <header>
+        <div class="flex py-2 justify-between px-4">
+            <div>
+                <img src="/Images/header-logo.png" alt="logo" class="max-w-full h-[40px]">
+            </div>
+            <nav  class="flex items-center justify-around gap-3 text-[0.83334rem] [&>*]:text-white">
+                <a href="#">News</a>
+                <a href="#">Jobs</a>
+                <a href="#">Donate</a>
+                <a href="#">A-Z</a>
+                <a href="#">Alumni</a>
+                <a href="#">Staff</a>
+                <a href="#">Students</a>
+            </nav>
+        </div>
+    </header>
+    </section>
+    
     
 </body>
 </html>
