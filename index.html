@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-      <script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -21,13 +22,13 @@
 
 </head>
 <body class="mx-auto font-sans">
-    <section  class="bg-[url('/Images/welcome-homepage-new.jpeg')] w-full h-auto">
-    <header>
-        <div class="flex py-2 justify-between px-4">
+    <section  class="bg-[url('/Images/welcome-homepage-new.jpeg')] bg-cover object-cover w-full pb-10 ">
+    <header class="text-white py-6 space-y-8">
+        <div class="flex  justify-between px-4">
             <div>
-                <img src="/Images/header-logo.png" alt="logo" class="max-w-full h-[40px]">
+                <img src="/Images/header-logo.png" alt="logo" class="max-w-full h-[40px] max-sm:w-full sm:h-[90px]">
             </div>
-            <nav  class="flex items-center justify-around gap-3 text-[0.83334rem] [&>*]:text-white">
+            <nav  class="flex items-center justify-around gap-3 text-[0.83334rem] sm:text-sm [&>*]:text-white">
                 <a href="#">News</a>
                 <a href="#">Jobs</a>
                 <a href="#">Donate</a>
@@ -37,7 +38,74 @@
                 <a href="#">Students</a>
             </nav>
         </div>
+        <div class=" flex justify-between items-center text-xl px-4">
+            <div class="flex justify-around items-center gap-14 font-semibold">
+                <div class="flex items-center">
+                    <a href="" class="">Study</a>
+                    <select name="" id="">
+                        <option value="" class="hidden"></option>
+                    </select>
+                </div>
+                  <div class="flex items-center">
+                    <a href="">Student life</a>
+                    <select name="" id="">
+                        <option value="" class="hidden"></option>
+                    </select>
+                </div>
+                  <div class="flex items-center">
+                    <a href="">Research and innovation</a>
+                    <select name="" id="">
+                        <option value="" class="hidden"></option>
+                    </select>
+                </div>
+                  <div class="flex items-center">
+                    <a href="">Global</a>
+                    <select name="" id="">
+                        <option value="" class="hidden"></option>
+                    </select>
+                </div>
+                  <div class="flex items-center">
+                    <a href="">About us</a>
+                    <select name="" id="">
+                        <option value="" class="hidden"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex items-center gap-1">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <a href="">Search the site</a>
+            </div>
+        </div>
     </header>
+    <main class="text-white px-4 pt-20  space-y-0">
+        <div class="w-200 border-3">
+            <h2 class="text-[3.48832rem] font-bold p-2">YOUR NEXT CHAPTER STARTS NOW</h2>
+        </div>
+        <div class="w-175 border-3">
+            <p class="text-[2.2rem] p-2">Welcome to Liverpool! If you're  joining us in September, 
+                we can't wait to meet you. Find out  what you can do now to get ready.</p>
+        </div>
+        
+        
+        <div class="w-80 h-auto text-white border-1 mt-8 p-6 tracking-wider ">
+            <a href="#" class="text-xl">Explore our Welcome <div class="flex items-center gap-6"> activities </a>
+            <i class="fa-solid fa-greater-than mt-2" ></i> </div>
+        </div>
+       
+    </main>
+    
+    </section>
+    <section class="w-full bg-[#212b58] text-white">
+        <form action="" class="flex justify-between">
+            <label for=""> Find your course</label>
+           <input type="text" class="bg-white">
+           <button>Search</button>
+        <div class="[&>*]:underline">
+           <li><a href="" > Course by A-Z</a></li>
+           <li><a href=""> Courses by subject</a></li>
+        </div>
+        </form>
+
     </section>
     
     
