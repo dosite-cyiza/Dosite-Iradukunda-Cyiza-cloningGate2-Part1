@@ -25,11 +25,11 @@
 <body class="mx-auto font-sans ">
     <section  class="bg-[url('/Images/welcome-homepage-new.jpeg')] bg-cover pb-10">
         <header class="text-white py-6 space-y-8">
-            <div class="flex  justify-between px-4">
+            <div class="flex flex-col sm:flex-row justify-between px-4 gap-4">
                 <div>
-                    <img src="/Images/header-logo.png" alt="logo" class="max-w-full h-[40px] max-sm:w-full sm:h-[90px]">
+                    <img src="/Images/header-logo.png" alt="logo" class="max-w-40 h-[40px] max-sm:w-full sm:h-[90px]">
                 </div>
-                <nav  class="flex items-center justify-around gap-3 text-[0.83334rem] sm:text-lg [&>*]:text-white [&>*]:hover:underline [&>*]:hover:underline-offset-2">
+                <nav  class=" hidden sm:flex sm:items-center sm:justify-around sm:gap-3 text-[0.83334rem] sm:text-lg md:text-xl [&>*]:text-white [&>*]:hover:underline [&>*]:hover:underline-offset-2">
                     <a href="#">News</a>
                     <a href="#">Jobs</a>
                     <a href="#">Donate</a>
@@ -39,34 +39,34 @@
                     <a href="#">Students</a>
                 </nav>
             </div>
-            <div class=" flex justify-between items-center text-xl px-4">
-                <div class="flex justify-around items-center gap-14 font-semibold ">
+            <div class=" flex flex-col lg:flex-row justify-between items-center text-xl px-4 gap">
+                <div class="flex flex-col sm:flex-row justify-around items-center gap-6 sm:gap-14 font-semibold">
                     <div class="flex items-center">
-                        <a href="" class="hover:underline-offset-10 hover:underline">Study</a>
+                        <a href="" class="hover:underline-offset-10 hover:underline text-sm sm:text-lg md:text-xl">Study</a>
                         <select name="" id="">
                             <option value="" class="hidden"></option>
                         </select>
                     </div>
                     <div class="flex items-center">
-                        <a href="" class="hover:underline-offset-10 hover:underline">Student life</a>
+                        <a href="" class="hover:underline-offset-10 hover:underline text-sm sm:text-lg md:text-xl">Student life</a>
                         <select name="" id="">
                             <option value="" class="hidden"></option>
                         </select>
                     </div>
                     <div class="flex items-center">
-                        <a href="" class="hover:underline-offset-10 hover:underline">Research and innovation</a>
+                        <a href="" class="hover:underline-offset-10 hover:underline text-sm sm:text-lg md:text-xl">Research and innovation</a>
                         <select name="" id="">
                             <option value="" class="hidden"></option>
                         </select>
                     </div>
                     <div class="flex items-center">
-                        <a href="" class="hover:underline-offset-10 hover:underline">Global</a>
+                        <a href="" class="hover:underline-offset-10 hover:underline text-sm sm:text-lg md:text-xl">Global</a>
                         <select name="" id="">
                             <option value="" class="hidden"></option>
                         </select>
                     </div>
                     <div class="flex items-center">
-                        <a href="" class="hover:underline-offset-10 hover:underline">About us</a>
+                        <a href="" class="hover:underline-offset-10 hover:underline text-sm sm:text-lg md:text-xl">About us</a>
                         <select name="" id="">
                             <option value="" class="hidden"></option>
                         </select>
@@ -74,22 +74,22 @@
                 </div>
                 <div class="flex items-center gap-1">
                     <i class="fa fa-search" aria-hidden="true"></i>
-                    <a href="" class="hover:underline-offset-10 hover:underline">Search the site</a>
+                    <a href="" class="hover:underline-offset-10 hover:underline text-sm sm:text-lg md:text-xl">Search the site</a>
                 </div>
             </div>
         </header>
     <main class="text-white px-4 pt-25">
-        <div class="w-200 border-3">
-            <h2 class="text-[3.48832rem] font-bold p-2">YOUR NEXT CHAPTER STARTS NOW</h2>
+        <div class="w-full sm:w-200 border-3">
+            <h2 class="text-2xl sm:text-4xl md:text-[3.48832rem] font-bold p-2">YOUR NEXT CHAPTER STARTS NOW</h2>
         </div>
-        <div class="w-175 border-3">
-            <p class="text-[1.2rem] p-2">Welcome to Liverpool! If you're  joining us in September, 
+        <div class="w-full sm:w-175 border-3">
+            <p class="text-sm sm:text-lg md:text-[1.2rem] p-2">Welcome to Liverpool! If you're  joining us in September, 
                 we can't wait to meet you. Find out  what you can do now to get ready.</p>
         </div>
         
         
-        <div class="w-80 h-auto text-white border-1 mt-8 p-6 tracking-wider ">
-            <a href="#" class="text-xl hover:underline hover:underline-offset-2">Explore our Welcome <div class="flex items-center gap-6"> activities </a>
+        <div class="w-full sm:w-80 h-auto text-white border-1 mt-8 p-6 tracking-wider ">
+            <a href="#" class="text-lg sm:text-xl hover:underline hover:underline-offset-2">Explore our Welcome <div class="flex items-center gap-6"> activities </a>
             <i class="fa-solid fa-greater-than mt-2 [w-12px]" ></i>
          </div>
         
@@ -99,17 +99,17 @@
     </section>
     <section class="w-full bg-[#212b58] text-white py-10 space-y-6">
         <div>
-        <form action="" class="flex justify-center gap-10 items-center text-xl">
+        <form action="" class="flex flex-col md:flex-row gap-6 justify-center md:gap-10 items-center text-lg md:text-xl px-4">
             <label for="" class="font-medium "> Find your course</label>
-           <input type="text" class="bg-white w-2xl h-20">
-           <button class="border px-10 py-6.5">Search</button>
+           <input type="text" class="bg-white md:w-2xl w-full h-16 md:h-20">
+           <button class="border px-8 md:px-10 py-4 md:py-6.5 w-full md:w-auto hover:underline cursor-pointer">Search</button>
         <div class="[&>*]:underline">
            <li class="list-none"><a href="" > Course by A-Z</a></li>
            <li class="list-none"><a href="" > Courses by subject</a></li>
         </div>
         </form>
         </div>
-        <div class=" text-white px-6 py-4 flex justify-center gap-10 text-xl">
+        <div class=" text-white px-6 py-4 flex flex-col sm:flex-row justify-center gap-6 sm:gap-10 text-lg md:text-xl">
             <label class="flex items-center gap-2  ">
                 <input type="radio" name="course-level" class="cursor-pointer appearance-none h-5 w-5 border-white border-5 rounded-full group-hover:bg-[#212b58] checked:bg-[#212b58]" />
                 <span>Undergraduate</span>
@@ -129,19 +129,19 @@
 
     <section class="bg-white pt-10  px-4  space-y-15">
         <div class="">
-        <h2 class="text-[27.648px] font-bold py-4 ">Discover the University of Liverpool</h2>
-        <div class="flex justify-between items-center gap-6">
-            <div class="max-w-5/6">
-                <img src="/Images/contact-us-VGM.jpeg" alt="">
+        <h2 class="text-xl sm:text-2xl md:text-[27.648px] font-bold py-4">Discover the University of Liverpool</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="w-full md:max-w-5/6">
+                <img src="/Images/contact-us-VGM.jpeg" alt="" class="w-full h-auto" >
             </div>
-            <div class="space-y-8">
-                <div class="w-5/5 text-2xl">
+            <div class="space-y-6 md:space-y-8">
+                <div class="w-full text-lg sm:text-xl md:text-2xl">
                     <p>We are the University of Liverpool. Located at the heart of a thrilling 
                         world city, we are a dynamic institution of academic excellence and innovation,
                          making a positive impact across the United Kingdom and the wider world.
                     </p>
                 </div>
-                <div class="w-5/5  text-xl">
+                <div class="w-full text-lg sm:text-xl">
                     <p>Since 1881, we've been at the forefront of world-class research 
                        and education, known for our cutting-edge facilities and relentless
                          pursuit of excellence and achievement. Find out how you can be part of 
@@ -149,16 +149,16 @@
                     </p>
                   
                 </div>
-                  <div class="[&>*]:border [&>*]:p-4 gap-3 flex w-5/5 text-xl">
-                        <button>Learn about us</button>
-                        <button>Liverpool our city, our inspiration</button>
+                  <div class="[&>*]:border [&>*]:p-4 gap-3 flex flex-col sm:flex-row w-full text-lg sm:text-xl">
+                        <button class="hover:underline">Learn about us</button>
+                        <button class="hover:underline">Liverpool our city, our inspiration</button>
                     </div>
             </div>
         </div>
         </div>
 
-        <div class="bg-[#ef426f] w-full flex items-center justify-around p-5 text-white ">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-30" viewBox="0 0 100 100">
+        <div class="bg-[#ef426f] w-full flex flex-col sm:flex-row items-center justify-around p-5 text-white gap-6">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-20 sm:w-30" viewBox="0 0 100 100">
                         <path fill="currentColor"
                             d="M35.3,33.2l3,2.2v4.9c0,0.3,0.1,0.6,0.4,0.8l10.8,8.1c0.2,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l5.9-4.4v3.6c0,0.6,0.4,1,1,1s1-0.4,1-1v-5.1l2.9-2.2c0.3-0.2,0.4-0.5,0.4-0.8s-0.2-0.6-0.4-0.8L50.7,21.3c-0.3-0.3-0.8-0.3-1.2,0L35.3,31.6c-0.3,0.2-0.4,0.5-0.4,0.8C34.9,32.7,35,33.1,35.3,33.2z M50.1,47.1l-9.8-7.3v-2.9l9.2,6.7c0.2,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l5.9-4.3v3L50.1,47.1z M60,39.8l-1.3,1v-3l1.3-1V39.8z M50.1,23.4l12.6,9.1L58,35.8L50.7,31c-0.5-0.3-1.1-0.2-1.4,0.3s-0.2,1.1,0.3,1.4l6.7,4.4l-6.2,4.4l-12.6-9.1L50.1,23.4z">
                         </path>
@@ -172,24 +172,24 @@
                             d="M18.4,82.3h62.7c0.3,0,0.6-0.1,0.8-0.3s0.3-0.5,0.2-0.8l-2.3-17c-0.1-0.5-0.5-0.9-1-0.9H20.5c-0.5,0-0.9,0.4-1,0.9l-2.1,17c0,0.3,0.1,0.6,0.2,0.8C17.9,82.2,18.1,82.3,18.4,82.3z M20.4,73.8h13.1l-0.6,6.5H19.6L20.4,73.8z M50.8,71.8v-6.5h11.9l0.6,6.5H50.8z M63.5,73.8l0.6,6.5H50.8v-6.5H63.5z M48.8,71.8H35.7l0.6-6.5h12.5V71.8z M48.8,73.8v6.5h-14l0.6-6.5H48.8z M66.1,80.3l-0.6-6.5h13.6l0.9,6.5H66.1z M78.8,71.8H65.3l-0.6-6.5H78L78.8,71.8z M34.3,65.3l-0.6,6.5H20.6l0.8-6.5H34.3z">
                         </path>
                     </svg>
-            <h2 class="font-bold  text-4xl">Manage your offer</h2>
-            <p class="text-2xl ">Find out how to confirm your place to <br> study at 
-                 and make changes <br> to your offer.
+            <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl text-center sm:text-left">Manage your offer</h2>
+            <p class="text-lg sm:text-xl md:text-2xl text-center sm:text-left">Find out how to confirm your place to <br> study at 
+                 and make changes <br class="hidden sm:block"> to your offer.
             </p>
-            <button class="bg-[#212b58] p-5 font-bold cursor-pointer hover:underline text-lg "><a href="">Manage your offer <br> now</a></button>
+            <button class="bg-[#212b58] p-3 sm:p-4 md:p-5 font-bold cursor-pointer hover:underline text-sm sm:text-lg "><a href="">Manage your offer <br> now</a></button>
 
         </div>
 
-        <div class="grid grid-cols-3">
-            <div class="bg-[#212b58] text-white col-span-2  space-y-10 py-10 px-12 ">
-                <h2 class="font-bold text-3xl">Study with us</h2>
-                <p class="text-xl tracking-wide">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+            <div class="bg-[#212b58] text-white lg:col-span-2 space-y-6 sm:space-y-10 py-6 sm:py-10 px-6 sm:px-12 ">
+                <h2 class="font-bold text-2xl sm:text-3xl">Study with us</h2>
+                <p class="text-lg sm:text-xl tracking-wide">
                     Discover endless possibilities. We offer a range of courses with support
                      and expertise to help you succeed in your future career. Find your perfect
                       course, explore our subject areas or discover everything you need to know
                        about studying with us.
                 </p>
-                <div class="[&>*]:border [&>*]:p-4  flex flex-wrap gap-4 [&>*]:cursor-pointer text-xl  ">
+                <div class="[&>*]:border [&>*]:p-4  flex flex-wrap gap-4 [&>*]:cursor-pointer sm:text-xl text-lg  ">
                 <button class="hover:underline"><a href=""></a> Undergraduate</a></button>
                 <button class="hover:underline"><a href="">Master's</a></button>
                 <button class="hover:underline"><a href="">Postgraduate research</a></button>
@@ -199,12 +199,12 @@
 
             </div>
             <div class="w-full">
-                <img src="/Images/Students.webp" class=" h-full" alt="">
+                <img src="/Images/Students.webp" class="w-full h-full" alt="">
             </div>
         </div>
 
-         <div class="bg-[#ef426f] w-full flex items-center justify-around p-5 text-white ">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-30" viewBox="0 0 100 100">
+         <div class="bg-[#ef426f] w-full flex flex-col sm:flex-row items-center justify-around p-5 text-white gap-6">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-20 sm:w-30" viewBox="0 0 100 100">
                         <path stroke="white" fill="none" d="M83.9,33.6c-2.8,0.3-5,2.8-5,5.7v13.6c-1-0.8-2.2-1.3-3.5-1.3c-1.5,0-2.9,0.6-3.9,1.6l-12,12c-1,1-1.6,2.4-1.6,3.9v20.4
                 c0,0.6,0.4,1,1,1H76c0.6,0,1-0.4,1-1v-9.4c0-0.8,0.3-1.7,0.9-2.3l9.9-11.4c1.6-1.8,2.4-4.2,2.4-6.6V39.2c0-1.6-0.7-3.1-1.8-4.1
                 C87,34,85.5,33.5,83.9,33.6z M88,59.8c0,1.9-0.7,3.8-2,5.3l-9.8,11.4c-0.9,1-1.3,2.3-1.3,3.6v8.4H59.8V69.2c0-0.9,0.4-1.8,1-2.5
